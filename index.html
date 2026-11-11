@@ -1,0 +1,360 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Technical Writing</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #263445;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        nav h2 {
+            color: #2563a6;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #263445;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2563a6;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 110px 10%;
+            background: #e8f0fa;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            max-width: 700px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #2563a6;
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 18px;
+            color: #536477;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #2563a6;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #174879;
+        }
+
+        /* General Sections */
+        section {
+            padding: 75px 10%;
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            color: #64748b;
+            margin-bottom: 35px;
+            max-width: 650px;
+        }
+
+        /* About */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 750px;
+            font-size: 16px;
+        }
+
+        /* Projects */
+        .projects {
+            background: #f5f7fa;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+            color: #2563a6;
+        }
+
+        .project-card p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .project-card a {
+            color: #2563a6;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Skills */
+        .skills {
+            background: white;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e8f0fa;
+            color: #2563a6;
+            padding: 10px 18px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            background: #e8f0fa;
+        }
+
+        .contact p {
+            margin: 15px 0 25px;
+            color: #536477;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #1e293b;
+            color: white;
+            font-size: 13px;
+        }
+
+        /* Mobile */
+        @media (max-width: 650px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero {
+                padding: 75px 8%;
+            }
+
+            section {
+                padding: 55px 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>My Portfolio</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hello, I'm <span>Your Name.</span></h1>
+        <p>
+            Computer Science student interested in technology,
+            problem-solving, and communicating complex ideas
+            through clear and effective technical writing.
+        </p>
+        <a href="#projects" class="button">View My Work</a>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-description">
+            A little background about who I am and what I do.
+        </p>
+
+        <div class="about-content">
+            <p>
+                I am a Computer Science student with an interest in
+                software development, technology, and innovation.
+                I enjoy solving problems and developing solutions
+                that make information and technology more accessible.
+            </p>
+            <br>
+            <p>
+                Through my technical writing coursework, I have
+                developed skills in professional communication,
+                document design, research, and presenting technical
+                information to different audiences. This portfolio
+                highlights some of my work and development.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Work</h2>
+        <p class="section-description">
+            A collection of projects and assignments demonstrating
+            my technical writing and communication skills.
+        </p>
+
+        <div class="project-grid">
+
+            <div class="project-card">
+                <h3>Technical Documentation</h3>
+                <p>
+                    A technical document explaining a technology,
+                    system, or process through structured writing
+                    and clear instructions.
+                </p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Persuasive Infographic</h3>
+                <p>
+                    An infographic combining research, visual
+                    elements, and written arguments to communicate
+                    an important technical topic.
+                </p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Software Engineering Project</h3>
+                <p>
+                    Project documentation covering system
+                    requirements, user stories, and software
+                    design concepts.
+                </p>
+                <a href="#">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Professional Writing</h3>
+                <p>
+                    Professional memos and written communications
+                    demonstrating audience awareness, organization,
+                    and professional tone.
+                </p>
+                <a href="#">View Project →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="section-title">Skills & Experience</h2>
+        <p class="section-description">
+            Technical and communication skills I have developed.
+        </p>
+
+        <div class="skill-list">
+            <span class="skill">Technical Writing</span>
+            <span class="skill">Professional Communication</span>
+            <span class="skill">HTML & CSS</span>
+            <span class="skill">Java</span>
+            <span class="skill">Python</span>
+            <span class="skill">Software Development</span>
+            <span class="skill">Research & Analysis</span>
+            <span class="skill">Document Design</span>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>
+            Thank you for taking the time to explore my portfolio.
+            Feel free to reach out!
+        </p>
+
+        <a href="mailto:your.email@example.com" class="button">
+            Contact Me
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Your Name | Technical Writing Portfolio</p>
+    </footer>
+
+</body>
+</html>
